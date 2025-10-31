@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --cor-primaria: #0a1128; /* #012a4a */
+    --cor-secundaria: #fefcfb; /* #F6F6F6 */
+    --cor-terciaria: #1282a2; /* #2c7da0 */
+    --cor-quarta: #001f54; /* #013a63 */ 
+    --cor-rodape: rgba(255, 255, 255, 0.288);
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
+.cabecalho__menu__link:hover {
+    text-decoration: overline                                                                           ;
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+img {
+    max-width: 50vh;
+    height: 50vh;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    gap: 30px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;;
+}
+
+.apresentacao__conteudo__texto en:hover {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__links_subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-family: var(--fonte-secundaria);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--cor-terciaria);
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: #F6F6F6;
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-quarta);
+    padding: 3%;
+    cursor: pointer;
+}
+
+.apresentacao__links__link img {
+    width: 32px;
+    height: 32px;
+}
+
+.apresentacao__conteudo__foto {
+    width: 50%;
+    border-radius: 80px;
+    object-fit: cover;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.rodape__link {
+    font-size: 0.75rem;
+}
+
+.rodape__link__link {
+    text-decoration: none;
+    color: var(--cor-rodape);
+}
+
+.rodape__link__link:hover {
+    color: var(--cor-secundaria);
+}
+
+.corpo__curriculo {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5% 2% 5%;
+    gap: 15px;
+}
+
+.corpo__curriculo__infopessoais {
+    background-color: var(--cor-quarta);
+    padding: 2% 5% 2% 5%;
+    border-radius: 15px;
+}
+
+.corpo__curriculo__infopessoais__primbloco {
+    display: flex;
+    justify-content: space-between;
+}
+
+.corpo__curriculo__infopessoais__primbloco__contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+}
+
+.corpo__curriculo__infopessoais__primbloco__contatos__legenda {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.corpo__curriculo__infopessoais__primbloco__contatos__linha {
+    border-top: 2px solid var(--cor-terciaria);
+    width: 115%;
+    margin: 2px 0px;
+}
+
+.corpo__curriculo__infopessoais__primbloco__contatos__contato {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: var(--fonte-secundaria);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    width: 180px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--cor-terciaria);
+    padding: 11.5px 5px;
+    text-decoration: none;
+    color: #F6F6F6;
+}
+
+.corpo__curriculo__infopessoais__primbloco__contatos__contato:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.corpo__curriculo__infopessoais__primbloco__contatos__contato img {
+     width: 32px;
+    height: 32px;
+}
+
+.corpo__curriculo__infopessoais__primbloco__fotoperfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.corpo__curriculo__infopessoais__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.5rem;
+    color: var(--cor-terciaria);
+    font-weight: 600;
+}
+
+.corpo__curriculo__infopessoais__dados {
+    display: flex;
+    font-family: var(--fonte-secundaria);
+    align-items:end;
+    font-size: 1.2rem;
+    gap: 205px;
+}
+
+.corpo__curriculo__infopessoais__dados__subdados {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    list-style: none;
+}
+
+.corpo__curriculo__infopessoais__dados__bot {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    color: #2c7da0;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 10px;
+}
+
+.corpo__curriculo__infopessoais__dados__bot:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+}
+
+.corpo__curriculo__tecno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--cor-quarta);
+    padding: 2% 5% 2% 5%;
+    border-radius: 15px;
+}
+
+.corpo__curriculo__tecno__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.56rem;
+    font-weight: 600;
+}
+
+.corpo__curriculo__tecno__linha {
+    border-top: 2px solid var(--cor-terciaria);
+    width: 50%;
+    margin: 2px 0px;
+}
+
+.corpo__curriculo__tecno__tecnologias {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.corpo__curriculo__tecno__tecnologias li {
+    font-family: var(--fonte-secundaria);
+    color:var(--cor-terciaria);
+    font-weight: 800;
+    padding: 10px 40px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 20px;
+}
+
+.corpo__curriculo__tecno__tecnologias__itens1:hover {
+    padding: 15px 45px;
+    color: white;
+    background-color: orange;
+    border: 3px solid white;
+}
+
+.corpo__curriculo__tecno__tecnologias__itens2:hover {
+    padding: 15px 45px;
+    color: white;
+    background-color: darkblue;
+    border: 3px solid white;
+}
+
+.corpo__curriculo__tecno__mais {
+    font-family: var(--fonte-secundaria);
+}
+
+.corpo__curriculo__exp {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--cor-quarta);
+    padding: 2% 5% 2% 5%;
+    border-radius: 15px;
+}
+
+.corpo__curriculo__exp__titulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.56rem;
+}
+
+.corpo__curriculo__exp__cargos {
+    display: flex;
+    gap: 40px;
+    font-family: var(--fonte-secundaria);
+}
+
+.corpo__curriculo__exp__cargos__cargo {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 10px;
+}
+
+.corpo__curriculo__exp__cargos__cargo__titulo {
+    color: var(--cor-terciaria);
+}
+
+.corpo__curriculo__exp__cargos__cargo__subtitulo {
+    color: var(--cor-terciaria);
+}
+
+.corpo__curriculo__exp__cargos__cargo__lista li::marker {
+    color: var(--cor-terciaria);
+}
+
+.corpo__curriculo__exp__linha {
+    border-top: 2px solid var(--cor-terciaria);
+    width: 100%;
+    margin: 2px 0px;
+}
+
+.corpo__curriculo__exp__cargo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 8px;
+    font-family: var(--fonte-secundaria);
+}
+
+.corpo__curriculo__exp__cargo__titulo {
+    color: var(--cor-terciaria);
+}
+
+.corpo__curriculo__formacao {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--cor-quarta);
+    padding: 2% 5% 2% 5%;
+    border-radius: 15px;
+}
+
+.corpo__curriculo__formacao__titulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.56rem;
+}
+
+.corpo__curriculo__formacao__conteudo {
+    display: flex;
+    gap: 3px;
+    font-family: var(--fonte-secundaria);
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.corpo__curriculo__formacao__conteudo__logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.corpo__curriculo__formacao__conteudo__univ {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.56rem;
+}
+
+
+.corpo__curriculo__formacao__conteudo__curso {
+    font-size: 0.75rem;
+}
+
+.corpo__curriculo__formacao__conteudo__periodo {
+    font-size: 0.69rem;
+    color: rgba(255, 255, 255, 0.54);
+}
+
+.corpo__curriculo__formacao__conteudo:hover {
+    background-color:var(--cor-terciaria);
+    border-radius: 15px;
+}
+
+.corpo__curriculo__certificados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--cor-quarta);
+    padding: 2% 5% 2% 5%;
+    border-radius: 15px;
+}
+
+.corpo__curriculo__certificados__titulo {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.56rem;
+}
+
+.corpo__curriculo__certificados__front {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--fonte-secundaria);
+}
+
+.corpo__curriculo__certificados__front__pdfs {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.corpo__curriculo__certificados__front__pdfs a {
+    display: flex;
+    align-items: center;
+    font-size: 1.06rem;
+    gap: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.corpo__curriculo__certificados__front__pdfs img {
+    width: 20px;
+    height: 20px;
+}
+
+.corpo__curriculo__certificados__front__pdfs__curso1:hover {
+    background-color: var(--cor-terciaria);
+    border-radius: 15px;
+}
+
+.corpo__curriculo__certificados__front__pdfs__curso2:hover {
+    background-color: var(--cor-terciaria);
+    border-radius: 15px;
+}
+
+.corpo__curriculo__contatos {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--cor-quarta);
+    padding: 2% 5% 2% 5%;
+    border-radius: 15px;
+}
+
+.corpo__curriculo__contatos__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.56rem;
+}
+
+.corpo__curriculo__contatos__lista {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.corpo__curriculo__contatos__linha {
+    border: 1px solid var(--cor-terciaria);
+    padding: 0px 40%;
+}
+
+.corpo__curriculo__contatos__lista__contato img {
+    width: 40px;
+    height: 40px;
+}
+
+.corpo__curriculo__contatos__lista__contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--fonte-secundaria);
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    width: 180px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--cor-terciaria);
+    padding: 11.5px 5px;
+    text-decoration: none;
+    color: #F6F6F6;
+    } 
+
+    .corpo__curriculo__contatos__lista__contato:hover {
+        background-color: var(--cor-terciaria);
+    }
+
+    @media (max-width: 1200px) {
+          .cabecalho {
+            padding: 8%;
+        }
+
+        .cabecalho__menu {
+            justify-content: center;
+        }
+
+        .apresentacao{
+            flex-direction: column-reverse;
+            padding: 5%;
+        }
+
+        .apresentacao__conteudo {
+            width: auto;
+        }
+
+    }
